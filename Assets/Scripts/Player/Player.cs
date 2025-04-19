@@ -16,6 +16,10 @@ public class Player : MonoBehaviour
     [SerializeField] float fallgravity;
     [SerializeField] float Jumpgravity;
 
+    [Header("Coyote Time")]
+    [SerializeField] private float coyoteTime = 0.3f;
+    private float coyoteTimerCounter;
+    private bool canCoyoteTime;
 
     [SerializeField] bool isFacingRight = true;
 
@@ -31,11 +35,12 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        Coyote(detection.ground != null);
         CheckDirection();
     }
     private void ManagerInputs_OneButtonEvent()
     {
-        if (detection.ground != null)
+        if (detection.ground != null || canCoyoteTime)
         {
             JumpPlayer();
         }
@@ -91,4 +96,24 @@ public class Player : MonoBehaviour
             rigidBody2D.gravityScale = gravityScale;
         }
     }
+
+
+    private void Coyote(bool coyote)
+    {
+        if (coyote)
+        {
+            coyoteTimerCounter = 0f;
+            canCoyoteTime = true;
+        }
+        if (detection.ground == null && canCoyoteTime)
+        {
+            coyoteTimerCounter += Time.deltaTime;
+            if(coyoteTimerCounter > coyoteTime)
+            {
+                canCoyoteTime = false;
+            }
+        }
+
+    }
+
 }

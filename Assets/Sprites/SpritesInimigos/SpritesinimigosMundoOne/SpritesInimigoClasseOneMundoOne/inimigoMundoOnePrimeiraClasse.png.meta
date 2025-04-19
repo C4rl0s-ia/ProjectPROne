@@ -119,59 +119,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: inimigoMundoOnePrimeiraClasse_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 4
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b69dba8333f37f970800000000000000
-      internalID: 8788562687063480683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: inimigoMundoOnePrimeiraClasse_1
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 0
-        width: 21
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 16f465e6c4cd2fa50800000000000000
-      internalID: 6553542628604268385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: inimigoMundoOnePrimeiraClasse_2
       rect:
         serializedVersion: 2
-        x: 23
-        y: 4
-        width: 6
-        height: 8
+        x: 1
+        y: 1
+        width: 27
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -188,7 +144,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3b07b9e55e1e9cf4ab0108bba9b3853b
     internalID: 0
     vertices: []
     indices: 
